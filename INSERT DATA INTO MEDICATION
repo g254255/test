@@ -1,0 +1,12 @@
+INSERT INTO nhs_db.medication (medication_id, medication_name, patient_id, doctor_id)
+VALUES
+(1, 'Co-codamol 30mg/500mg', 4, 3),
+(2, 'Lisinopril 10mg', 2, 7),
+(3, 'Clotrimazole 1% Cream', 4, 9),
+(4, 'Naproxen 250mg', 3, 6),
+(5, 'Metformin 500mg', 8, 7),
+(6, 'Omeprazole 20mg', 5, 9),
+(7, 'Fexofenadine 180mg', 3, 5),
+(8, 'Doxycycline 100mg', 8, 1),
+(9, 'Citalopram 20mg', 4, 8),
+(10, 'Salbutamol Inhaler 100mcg', 1, 5);
