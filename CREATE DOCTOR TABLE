@@ -1,0 +1,9 @@
+CREATE TABLE rhs_db.doctor (
+    doctor_id INT AUTO_INCREMENT,
+    doctor_name VARCHAR(100) NOT NULL,
+    doctor_speciality VARCHAR(100) NULL,
+    email VARCHAR(120) NULL,
+    phone_number VARCHAR(20) NULL,
+    CONSTRAINT pk_doctor PRIMARY KEY (doctor_id),
+    CONSTRAINT uq_doctor_email UNIQUE (email)
+);
