@@ -1,0 +1,13 @@
+SELECT
+    p.patient_name,
+    m.medication_name
+FROM nhs_db.patient p
+LEFT JOIN nhs_db.medication m
+    ON p.patient_id = m.patient_id
+UNION
+SELECT
+    p.patient_name,
+    m.medication_name
+FROM nhs_db.patient p
+RIGHT JOIN nhs_db.medication m
+    ON p.patient_id = m.patient_id;
