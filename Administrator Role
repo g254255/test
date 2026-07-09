@@ -1,0 +1,2 @@
+CREATE USER 'admin_user'@'%' IDENTIFIED BY 'AdminPass123!';
+GRANT ALL PRIVILEGES ON nhs_db.* TO 'admin_user'@'%';
