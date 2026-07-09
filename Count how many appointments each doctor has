@@ -1,0 +1,7 @@
+SELECT
+    d.doctor_name,
+    COUNT(a.appointment_id) AS total_appointments
+FROM nhs_db.doctor d
+LEFT JOIN nhs_db.appointment a
+    ON d.doctor_id = a.doctor_id
+GROUP BY d.doctor_id;
