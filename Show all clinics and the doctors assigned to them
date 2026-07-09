@@ -1,0 +1,6 @@
+SELECT
+    d.doctor_name,
+    c.clinic_name
+FROM nhs_db.clinic c
+RIGHT JOIN nhs_db.doctor d
+    ON c.doctor_id = d.doctor_id;
