@@ -1,0 +1,12 @@
+INSERT INTO nhs_db.doctor (doctor_id, doctor_name, doctor_speciality, email, phone_number)
+VALUES
+(1, 'Dr. Michael Harper', 'General Practice', 'michael.harper@nhs.example.uk', '01210002111'),
+(2, 'Dr. Sophia Ahmed', 'Cardiology', 'sophia.ahmed@nhs.example.uk', '01210002222'),
+(3, 'Dr. Liam O’Donnell', 'Dermatology', 'liam.odonnell@nhs.example.uk', '01210002333'),
+(4, 'Dr. Chloe Richardson', 'Pediatrics', 'chloe.richardson@nhs.example.uk', '01210002444'),
+(5, 'Dr. Benjamin Carter', 'Orthopedics', 'benjamin.carter@nhs.example.uk', '01210002555'),
+(6, 'Dr. Zara Malik', 'Neurology', 'zara.malik@nhs.example.uk', '01210002666'),
+(7, 'Dr. Oliver Grant', 'Psychiatry', 'oliver.grant@nhs.example.uk', '01210002777'),
+(8, 'Dr. Helena Brooks', 'Endocrinology', 'helena.brooks@nhs.example.uk', '01210002888'),
+(9, 'Dr. Marcus Silva', 'Gastroenterology', 'marcus.silva@nhs.example.uk', '01210002999'),
+(10, 'Dr. Amina Yusuf', 'Ophthalmology', 'amina.yusuf@nhs.example.uk', '01210002000');
