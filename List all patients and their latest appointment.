@@ -1,0 +1,9 @@
+SELECT
+    p.patient_name,
+    a.appointment_date,
+    a.appointment_time,
+    a.notes
+FROM nhs_db.patient p
+LEFT JOIN nhs_db.appointment a
+    ON p.patient_id = a.patient_id
+ORDER BY p.patient_id;
