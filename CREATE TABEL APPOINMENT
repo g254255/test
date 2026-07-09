@@ -1,0 +1,23 @@
+CREATE TABLE nhs_db.appointment (
+    appointment_id INT AUTO_INCREMENT,
+    appointment_date DATE NOT NULL,
+    appointment_time TIME NOT NULL,
+    notes VARCHAR(500) NOT NULL,
+    patient_id INT NOT NULL,
+    doctor_id INT NOT NULL,
+    clinic_id INT NOT NULL,
+
+    CONSTRAINT pk_appointment PRIMARY KEY (appointment_id),
+
+    CONSTRAINT fk_appointment_patient
+        FOREIGN KEY (patient_id) REFERENCES patient(patient_id)
+        ON UPDATE CASCADE ON DELETE RESTRICT,
+
+    CONSTRAINT fk_appointment_doctor
+        FOREIGN KEY (doctor_id) REFERENCES doctor(doctor_id)
+        ON UPDATE CASCADE ON DELETE RESTRICT,
+
+    CONSTRAINT fk_appointment_clinic
+        FOREIGN KEY (clinic_id) REFERENCES clinic(clinic_id)
+        ON UPDATE CASCADE ON DELETE RESTRICT
+);
