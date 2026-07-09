@@ -1,0 +1,10 @@
+CREATE TABLE nhs_db.clinic (
+    clinic_id INT AUTO_INCREMENT,
+    clinic_name VARCHAR(100) NOT NULL,
+    clinic_address VARCHAR(255) NULL,
+    doctor_id INT NULL,
+    CONSTRAINT pk_clinic PRIMARY KEY (clinic_id),
+    CONSTRAINT fk_clinic_doctor FOREIGN KEY (doctor_id) REFERENCES doctor(doctor_id)
+        ON UPDATE CASCADE
+        ON DELETE SET NULL
+);
