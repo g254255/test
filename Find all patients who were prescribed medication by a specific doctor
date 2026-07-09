@@ -1,0 +1,8 @@
+SELECT
+    p.patient_name,
+    m.medication_name,
+    d.doctor_name
+FROM nhs_db.medication m
+JOIN nhs_db.patient p ON m.patient_id = p.patient_id
+JOIN nhs_db.doctor d ON m.doctor_id = d.doctor_id
+WHERE d.doctor_id = 5;
