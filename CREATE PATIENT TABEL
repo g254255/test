@@ -1,0 +1,9 @@
+CREATE TABLE nhs_db.patient (
+    patient_id INT AUTO_INCREMENT,
+    patient_name VARCHAR(100) NOT NULL,
+    address VARCHAR(255) NULL,
+    email VARCHAR(120) NULL,
+    phone_number VARCHAR(20) NULL,
+    CONSTRAINT pk_patient PRIMARY KEY (patient_id),
+    CONSTRAINT uq_patient_email UNIQUE (email)
+);
