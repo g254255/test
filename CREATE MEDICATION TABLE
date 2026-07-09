@@ -1,0 +1,13 @@
+CREATE TABLE nhs_db.medication (
+    medication_id INT AUTO_INCREMENT,
+    medication_name VARCHAR(150) NOT NULL,
+    patient_id INT NOT NULL,
+    doctor_id INT NOT NULL,
+    CONSTRAINT pk_medication PRIMARY KEY (medication_id),
+    CONSTRAINT fk_medication_doctor
+        FOREIGN KEY (doctor_id) REFERENCES doctor(doctor_id)
+        ON UPDATE CASCADE ON DELETE RESTRICT,
+    CONSTRAINT fk_medication_patient
+        FOREIGN KEY (patient_id) REFERENCES patient(patient_id)
+        ON UPDATE CASCADE ON DELETE RESTRICT
+);
