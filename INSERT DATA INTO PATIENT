@@ -1,0 +1,12 @@
+INSERT INTO nhs_db.patient (patient_id, patient_name, address, email, phone_number)
+VALUES
+(1, 'Ethan Ward', '14 Broad Street, Birmingham, B1 2HL', 'ethan.ward@example.co.uk', '07700901111'),
+(2, 'Hannah Malik', '82 Holloway Head, Birmingham, B1 1NB', 'hannah.malik@example.co.uk', '07700902222'),
+(3, 'Marcus Green', '75 Suffolk Street Queensway, Birmingham, B1 1LT', 'marcus.green@example.co.uk', '07700903333'),
+(4, 'Priya Desai', '127 New Street, Birmingham, B2 4QA', 'priya.desai@example.co.uk', '07700904444'),
+(5, 'Callum O’Connor', '9 Bennetts Hill, Birmingham, B2 5RS', 'callum.oconnor@example.co.uk', '07700905555'),
+(6, 'Aisha Rahman', '63 Hurst Street, Birmingham, B5 4TD', 'aisha.rahman@example.co.uk', '07700906666'),
+(7, 'Jacob Turner', '118 Bristol Street, Birmingham, B5 7AY', 'jacob.turner@example.co.uk', '07700907777'),
+(8, 'Emily Foster', '40 Highgate Road, Birmingham, B12 0XP', 'emily.foster@example.co.uk', '07700908888'),
+(9, 'Samuel Grant', '93 Pershore Street, Birmingham, B5 4RX', 'samuel.grant@example.co.uk', '07700909999'),
+(10, 'Chloe Martins', '22 Ladywood Middleway, Birmingham, B16 8HA', 'chloe.martins@example.co.uk', '07700901010');
