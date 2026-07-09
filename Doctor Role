@@ -1,0 +1,6 @@
+CREATE USER 'doctor_user'@'%' IDENTIFIED BY 'DoctorPass123!';
+
+GRANT SELECT, UPDATE ON nhs_db.appointment TO 'doctor_user'@'%';
+GRANT SELECT ON nhs_db.patient TO 'doctor_user'@'%';
+GRANT SELECT ON nhs_db.clinic TO 'doctor_user'@'%';
+GRANT SELECT, INSERT ON nhs_db.medication TO 'doctor_user'@'%';
