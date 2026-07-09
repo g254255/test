@@ -1,0 +1,6 @@
+CREATE USER 'reception_user'@'%' IDENTIFIED BY 'ReceptionPass123!';
+
+GRANT SELECT ON nhs_db.patient TO 'reception_user'@'%';
+GRANT SELECT, INSERT, UPDATE ON nhs_db.appointment TO 'reception_user'@'%';
+GRANT SELECT ON nhs_db.doctor TO 'reception_user'@'%';
+GRANT SELECT ON nhs_db.clinic TO 'reception_user'@'%';
