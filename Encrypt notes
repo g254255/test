@@ -1,0 +1,2 @@
+UPDATE nhs_db.appointment
+SET notes_encrypted = AES_ENCRYPT(notes, 'SecretKey123');
