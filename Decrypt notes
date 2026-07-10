@@ -1,0 +1,3 @@
+SELECT 
+    AES_DECRYPT(notes_encrypted, 'SecretKey123') AS decrypted_notes
+FROM nhs_db.appointment;
